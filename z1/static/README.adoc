@@ -1,0 +1,47 @@
+# Modern CSS & JavaScript for Dinosaurs
+:source-highlighter: pygments
+:pygments-style: manni
+:figure-caption!:
+:icons: font
+
+Tim Berners-Lee, http://www.wired.co.uk/article/first-web-page[First ever web page put back online by Cern].
+
+* http://info.cern.ch/hypertext/WWW/TheProject.html[World Wide Web] – the first
+  website.
+
+Peter Jang’s **Explained for Dinosaurs** series:
+
+* https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525[Modern CSS]
+** http://flexboxfroggy.com/#pl[Flexbox Froggy]
+** http://cssgridgarden.com/#pl[Grid Garden]
+* https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70[Modern JavaScript]
+
+Zainstaluj i użyj https://browsersync.io/#instal[Browsersync].
+
+If you’re only using .html files, you’ll need to use the server mode.
+Browsersync will start a mini-server and provide a URL to view your site.
+
+Run in two separate terminal tabs:
+
+```sh
+browser-sync start --server --browser "google chrome" \
+  --files "styles/**/*.css","scripts/**/*.js,index.html"
+sass --scss --watch scss:styles
+```
+
+The second command watches changes https://sass-lang.com[SASS] files.
+
+Try https://github.com/oxalorg/sakura[sakura] – a minimal classless CSS
+framework/theme.
+
+
+## CSS
+
+. https://css-tricks.com/logic-in-media-queries/[Logic in Media Queries]
+. Add @media styles.
+. Check link:scss/main.scss[scss/main.scss].
+
+
+## JavaScript
+
+. Check link:scripts/main.js[scripts/main.js].

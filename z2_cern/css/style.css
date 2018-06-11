@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(/fonts/Ubuntu/Ubuntu-Bold.ttf);
+  font-weight: bold;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 38em;
+  margin: auto;
+  color: #4a4a4a;
+  background-color: #f9f9f9;
+  padding: 13px;
+}
+@media (min-width: 300px) and (max-width: 800px) {
+  html {
+      background: red;
+  }
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-width: 240px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+h1 {
+  font-size: 2.35em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 25px;
+}
+h6 {
+  font-size: 1em;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: inherit;
+  background: #fff;
+  color: #4a4a4a;
+}
+header, footer {
+  font-size: large;
+  text-align: center;
+  padding: 0.3em 0;
+  background-color: #323232;
+  color: #f9f9f9;
+}
+main {
+  background: #e0e0e0;
+  padding: 0 20px;
+
+  width: 100%;
+}
+body {
+  padding-left: 200px;
+  padding-right: 190px;
+  min-width: 240px;
+}
+header, footer {
+  margin-left: -200px;
+  margin-right: -190px;
+}
+main, nav, aside {
+  position: relative;
+  float: left;
+}
+aside {
+  width: 130px;
+  padding: 0 10px;
+  margin-right: -100%;
+}
+footer {
+  clear: both;
+}
+.intro {
+    font-size: 23px;
+}
+.box-1 {
+    font-size: 20px;
+}
+.box-2 {
+    padding-left: 35px;
+}
+* html nav {
+  left: 150px;
+}
+#mapid {
+     height: 350px;
+     width: 550px;
+}

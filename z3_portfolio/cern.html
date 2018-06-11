@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>The World Wide Web project</title>
+    <link rel="stylesheet" href="/styles/cern.css">
+    <link rel="stylesheet" href="/styles/leaflet.css" />
+    <script src="/script/leaflet.js"></script>
+</head>
+
+    <header><h1>World Wide Web</h1></header>
+
+    <main>
+        <div class="container">
+            <div class="intro">
+                <p>The WorldWideWeb (W3) is a wide-area <a href="WhatIs.html">hypermedia</a> information retrieval initiative aiming to give universal access to a large universe of documents.</p>
+                <p>Everything there is online about W3 is linked directly or indirectly to this document, including an <a href="Summary.html">executive summary</a> of the project,
+                <a href="Administration/Mailing/Overview.html">Mailing lists</a>, <a href="Policy.html">Policy</a>, November's <a href="News/9211.html">W3 news</a>,
+                <a href="FAQ/List.html">Frequently Asked Questions</a>.</p>
+            </div>
+
+            <div class="box-1">
+                <a href="../DataSources/Top.html">What's out there?</a>
+            </div>
+            <div class="box-2">
+                Pointers to the world's online information, <a href="../DataSources/bySubject/Overview.html"> subjects</a>, <a href="../DataSources/WWW/Servers.html">W3 servers</a>, etc.
+            </div>
+
+            <div class="box-1">
+                <a href="Help.html">Help</a>
+            </div>
+            <div class="box-2">
+                on the browser you are using
+            </div>
+
+            <div class="box-1">
+                <a href="Status.html">Software Products</a>
+            </div>
+            <div class="box-2">
+                A list of W3 project components and their current state. (e.g. <a href="LineMode/Browser.html">Line Mode</a> ,X11 <a href="Status.html#35">Viola</a> ,
+                <a href="NeXT/WorldWideWeb.html">NeXTStep</a>, <a href="Daemon/Overview.html">Servers</a> , <a href="Tools/Overview.html">Tools</a> ,<a href="MailRobot/Overview.html"> Mail robot</a>,
+                <a href="Status.html#57">Library</a> )
+            </div>
+
+            <div class="box-1">
+                <a href="Technical.html">Technical</a>
+            </div>
+            <div class="box-2">
+                Details of protocols, formats, program internals etc
+            </div>
+
+            <div class="box-1">
+                <a href="Bibliography.html">Bibliography</a>
+            </div>
+            <div class="box-2">
+                Paper documentation on  W3 and references.
+            </div>
+
+            <div class="box-1">
+                <a href="People.html">People</a>
+            </div>
+            <div class="box-2">
+                A list of some people involved in the project.
+            </div>
+
+            <div class="box-1">
+                <a href="History.html">History</a>
+            </div>
+            <div class="box-2">
+                A summary of the history of the project.
+            </div>
+
+            <div class="box-1">
+                <a href="Helping.html">How can I help</a> ?
+            </div>
+            <div class="box-2">
+                If you would like to support the web..
+            </div>
+
+            <div class="box-1">
+                <a href="../README.html">Getting code</a>
+            </div>
+            <div class="box-2">
+                Getting the code by<a href="LineMode/Defaults/Distribution.html">anonymous FTP</a> , etc.</a>
+            </div>
+            <div id="mapid">
+                        <script>
+                        var mymap = L.map('mapid').setView([46.234032, 6.052951000000007], 13);
+                        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                            attribution: 'Mapa ',
+                            maxZoom: 18,
+                            id: 'mapbox.streets',
+                            accessToken: 'pk.eyJ1IjoibWlrb2xvc2VrIiwiYSI6ImNqZTJ6eXExYzJlZnAycnM2ZTl1YmZhNHYifQ.6XhiKfCsiTD06qhIvVfqXQ'
+                            }).addTo(mymap);
+                        L.marker([46.234032, 6.052951000000007]).addTo(mymap)
+                            .bindPopup('CERN')
+                            .openPopup();
+                        </script>
+}).addTo(mymap);
+</main>
+<footer>
+    2018© Jcp
+</footer>
+</body>
+</html>

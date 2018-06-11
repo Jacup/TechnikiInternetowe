@@ -1,0 +1,36 @@
+{
+  "name": "my_gulp_101",
+  "version": "1.0.0",
+  "description": "Zainstaluj [node](https://nodejs.org/en/). Następnie zainstaluj [Gulp4](https://www.npmjs.com/package/gulp4) which automate and enhance your workflow & [Browsersync](https://browsersync.io/#instal). [Minimal BrowserSync setup with Gulp4](https://github.com/gulpjs/gulp/blob/4.0/docs/recipes/minimal-browsersync-setup-with-gulp4.md).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h5c3j/my_gulp_101.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h5c3j/my_gulp_101/issues"
+  },
+  "homepage": "https://github.com/h5c3j/my_gulp_101#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-asciidoctor": "^1.5.5-4.3",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "jshint": "^2.9.5"
+  },
+  "dependencies": {
+    "dev": "^0.1.3",
+    "gulp-asciidoctor": "^1.5.5-4.3"
+  }
+}

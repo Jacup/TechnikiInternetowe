@@ -1,0 +1,116 @@
+// partials
+
+// $color-blossom: #2c8898;
+// $color-fade: #982c61;
+//
+// $color-bg: #f9f9f9;
+// $color-bg-alt: #f1f1f1;
+//
+// $color-text: #4a4a4a;
+// $font-size-base: 1.8rem;
+//
+// $font-family-sans-serif: Verdana, Geneva, sans-serif;
+// $font-family-serif: serif;
+// @import 'sakura';
+
+@import 'meyer-reset';
+
+// variables
+
+$font-stack: Verdana, Geneva, sans-serif;
+$primary-color: #333;
+$primary-background-color: #ddd;
+
+$message-color: #0f0;
+$success-color: #00f;
+$error-color: #f00;
+$warning-color: #fa0;
+
+body {
+  background-color: $primary-background-color;
+  color: $primary-color;
+  font-family: $font-stack;
+  font-size: 1.2rem;
+  line-height: 1.618;
+  max-width: 38em;
+}
+
+// @media (max-width: 684px) {
+//   body {
+//     font-size: 1.53rem;
+//   }
+// }
+//
+// @media (max-width: 382px) {
+//   body {
+//     font-size: 1.35rem;
+//   }
+// }
+
+// uncomment layout
+// @import 'float-layout'; // needs additional div.container element
+// @import 'flex-layout';
+@import 'grid-layout';
+
+// coment to remove visual debugging
+@import 'debug-layout';
+
+
+// Examples of SASS code.
+
+// nesting selectors
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+// extend & inheritance
+
+%message {
+  border: 1px solid $message-color;
+  color: $message-color;
+  padding: 10px;
+}
+
+.success {
+  @extend %message;
+  border-color: $message-color;
+}
+
+.error {
+  @extend %message;
+  border-color: $error-color;
+}
+
+.warning {
+  @extend %message;
+  border-color: $warning-color;
+}
+
+// operators
+
+.container { width: 100%; }
+
+[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+[role="complimentary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}

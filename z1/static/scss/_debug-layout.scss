@@ -1,0 +1,22 @@
+$dark-color: #444;
+$light-color: #ccc;
+$side-color: #ff0;
+
+body {
+  color: $dark-color;
+}
+
+header,
+footer {
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+main {
+  background: $light-color;
+}
+
+nav,
+aside {
+  background: $side-color;
+}

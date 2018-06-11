@@ -1,0 +1,73 @@
+/*
+Error: Undefined variable: "$font-family-serif".
+        on line 11 of scss/sakura.scss
+
+6: 
+7: /* Body *\/
+8: 
+9: html {
+10:     font-size: 62.5%; // So that root size becomes 10px
+11:     font-family: $font-family-serif;
+12: }
+13: 
+14: body {
+15:     // $font-size-base must be a rem value
+16:     font-size: $font-size-base;
+
+Backtrace:
+scss/sakura.scss:11
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/plugin.rb:109:in `method_missing'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/bin/sass:23:in `load'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/bin/sass:23:in `<main>'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/wbzyl/.rvm/gems/ruby-2.5.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font-family-serif\".\A         on line 11 of scss/sakura.scss\A \A 6: \A 7: /* Body */\A 8: \A 9: html {\A 10:     font-size: 62.5%; // So that root size becomes 10px\A 11:     font-family: $font-family-serif;\A 12: }\A 13: \A 14: body {\A 15:     // $font-size-base must be a rem value\A 16:     font-size: $font-size-base;"; }

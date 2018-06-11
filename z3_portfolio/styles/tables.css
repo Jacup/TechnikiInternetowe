@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url(/fonts/ShadowsIntoLight.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 15vh;
+    width: 100vw;
+    background-color: lightgrey;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Shadows Into Light';
+    font-size: 5em;
+
+}
+.przewijana-tabela {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 15px;
+}
+
+.przewijana-tabela th, tfoot {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+  background: #f2f0e6;
+}
+
+.przewijana-tabela th, tfoot, td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+body {
+  margin: 0;
+  color: #494b4d;
+  font-size: 14px;
+  line-height: 20px;
+}
+caption {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+h1, h2, h3, caption {
+  margin: 0 0 10px 0;
+  color: #1d97bf;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+table {
+  margin-bottom: 30px;
+}
+
+a {
+  color: #ff6680;
+}
